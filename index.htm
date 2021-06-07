@@ -22,7 +22,21 @@ body{
 <div id="centerdiv" class="centerdiv"
 <h1>hi</h1>
 <p id="p" class="para">
-aaa!
+aaa! asd
 </p>
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="code" name="code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<button onclick="myFunction()">
+Click me
+</button>
 </div>
+<script>
+function funnyfunc(){
+var code = document.getElementById("forum").value;
+var output = eval(code)
+}
+</script>
 </body>
