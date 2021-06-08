@@ -16,6 +16,12 @@ body{
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
+.response {
+  background: gray;
+  font: 42px Arial, sans-serif;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
 </style>
 <script>
 function myFunction(){
@@ -26,10 +32,8 @@ document.getElementById("p").innerHTML = output;
 </script>
 </head>
 <body>
-  <div id="centerdiv" class="centerdiv" <h1="">hi
-<p id="p" class="para">
-aaa!
-</p>
+  <div id="centerdiv" class="centerdiv" <p id="header" class="para">this is my calculator! check the source code out <a href="https://github.com/swcyoa/calc">here</a></p>
+<p id="p" class="response"></p>
 <form>
   <input type="text" id="code"><br><br>
 <input type="button" id="submit" onclick="myFunction()"> Submit </button>
