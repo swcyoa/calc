@@ -26,14 +26,23 @@ body{
 <script>
 function myFunction(){
 var code = document.getElementById("code").value;
-var output = eval(code);
-document.getElementById("p").innerHTML = output;
+var output;
+try {
+  eval(code);
+  document.getElementById("p").innerHTML = output;
+}
+catch(err) {
+  Document.getElementById("err").innerHTML = "An error occured: " + err;
+}
+finally {
+}
 }
 </script>
 </head>
 <body>
   <div id="centerdiv" class="centerdiv" <p id="header" class="para">this is my calculator! check the source code out <a href="https://github.com/swcyoa/calc">here</a></p>
 <p id="p" class="response"></p>
+<p id="err" class="para">No errors yet!</p>
 <form>
   <input type="text" id="code"><br><br>
 <input type="button" id="submit" onclick="myFunction()"> Submit </button>
