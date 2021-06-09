@@ -27,15 +27,15 @@ body{
 function myFunction(){
 var code = document.getElementById("code").value;
 var output;
-try {
+//try {
   eval(code) = output;
   document.getElementById("p").innerHTML = output;
-}
-catch(err) {
-  document.getElementById("errortext").innerHTML = "An error occured: " + err;
-}
-finally {
-}
+//}
+//catch(err) {
+//  document.getElementById("errortext").innerHTML = "An error occured: " + err;
+//}
+//finally {
+//}
 }
 </script>
 </head>
@@ -48,5 +48,5 @@ finally {
 <input type="button" id="submit" onclick="myFunction()"> Submit </button>
   </form>
 </div>
-<p class="para"><br><br><br><br><br>          Version 1.1</p>
+<p class="para"><br><br><br><br><br>Version 1.1</p>
 </body></html>
