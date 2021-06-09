@@ -32,7 +32,7 @@ try {
   document.getElementById("p").innerHTML = output;
 }
 catch(err) {
-  Document.getElementById("err").innerHTML = "An error occured: " + err;
+  Document.getElementById("errortext").innerHTML = "An error occured: " + err;
 }
 finally {
 }
@@ -42,11 +42,11 @@ finally {
 <body>
   <div id="centerdiv" class="centerdiv" <p id="header" class="para">this is my calculator! check the source code out <a href="https://github.com/swcyoa/calc">here</a></p>
 <p id="p" class="response"></p>
-<p id="err" class="para">No errors yet!</p>
+<p id="errortext" class="para">No errors yet!</p>
 <form>
   <input type="text" id="code"><br><br>
 <input type="button" id="submit" onclick="myFunction()"> Submit </button>
   </form>
 </div>
-
+<p class="para">Version 1</p>
 </body></html>
